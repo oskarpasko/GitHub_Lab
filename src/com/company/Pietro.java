@@ -2,15 +2,15 @@ package com.company;
 
 public class Pietro {
     int numerPietra;
-    int [] ElementPietra;
+    int[] ElementPietra;
     int podajIloscPomieszczen;
-}
-public Pietro(int numerPietra, int[] ElementPietra, int podajIloscPomieszczen){
-    this.numerPietra = numerPietra;
-    this.ElementPietra = ElementPietra;
-    this.podajIloscPomieszczen = podajIloscPomieszczen;
 
-}
+    public Pietro(int numerPietra, int[] ElementPietra, int podajIloscPomieszczen) {
+        this.numerPietra = numerPietra;
+        this.ElementPietra = ElementPietra;
+        this.podajIloscPomieszczen = podajIloscPomieszczen;
+
+    }
 
     public int getNumerPietra() {
         return numerPietra;
@@ -35,4 +35,4 @@ public Pietro(int numerPietra, int[] ElementPietra, int podajIloscPomieszczen){
     public void setPodajIloscPomieszczen(int podajIloscPomieszczen) {
         this.podajIloscPomieszczen = podajIloscPomieszczen;
     }
-
+}
