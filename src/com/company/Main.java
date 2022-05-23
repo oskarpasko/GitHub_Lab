@@ -23,7 +23,7 @@ public class Main {
 
         Mieszkanie mojeMieszkanie = new Mieszkanie(){
             {
-                ElementPietra[] mojeElementyPietra = {
+                ElementPietra[] mojeElementyParteru = {
                         mojeMieszkanie,
                         new Pomieszczenie(){
                             {
@@ -64,4 +64,4 @@ public class Main {
 
         System.out.println(mojBudynek.policzPole());
     }
-}
+
