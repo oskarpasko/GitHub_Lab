@@ -3,10 +3,15 @@ package com.company;
 public class Mieszkanie extends ElementPietra implements PowierzchnioLiczone {
 
     public String wizytowka;
-    public Pomieszczenie[] pomieszczenie = new Pomieszczenie[0];
+    public Pomieszczenie[] pomieszczenia;
 
     @Override
     public int policzPole() {
-        return 0;
+        int suma=0;
+        for(int i = 0; i < pomieszczenia.length ;i++)
+        {
+            suma += pomieszczenia[i].policzPole();
+        }
+        return suma;
     }
 }
