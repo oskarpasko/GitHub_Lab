@@ -7,5 +7,5 @@ public class Garaz extends Pomieszczenie implements PowierzchnioLiczone{
     @Override
     public int policzPole() {
         return szerokoscBramy * wysokoscBramy;
-    }
+    }//
 }
