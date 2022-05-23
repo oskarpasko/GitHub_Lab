@@ -3,8 +3,8 @@ package com.company;
 public class Budynek implements PowierzchnioLiczone{
 
     public int powierzchniaDzialki;
-    public int[] pietra = new int[0];
-    public int[] garaze = new int[0];
+    public Pietro[] pietra = new Pietro[0];
+    public Garaz[] garaze = new Garaz[0];
 
     public int podajiloscPieter(){
         return 0;
