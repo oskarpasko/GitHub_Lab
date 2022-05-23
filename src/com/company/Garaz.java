@@ -3,8 +3,8 @@ package com.company;
 public class Garaz extends Pomieszczenie{
     int szerokoscBramy;
     int wysokoscBramy;
+    int szerokosc;
+    int dlugosc;
 
-    public Garaz(int szerokosc, int dlugosc, String nazwa) {
-        super(szerokosc, dlugosc, nazwa);
-    }
+
 }
