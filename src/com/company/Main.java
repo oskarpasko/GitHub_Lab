@@ -35,5 +35,23 @@ public class Main {
         };
 
         System.out.println(mojBudynek.policzPole());
+      
+      
+    Pomieszczenie[] mojePomieszczenia = {
+                new Pomieszczenie(){
+                    {
+                        this.szerokosc=3;
+                        this.dlugosc=2;
+                        this.nazwa="pokoj";
+                    }
+                },
+                new Pomieszczenie(){
+                    {
+                        szerokosc=2;
+                        dlugosc=2;
+                        nazwa="lazienka";
+                    }
+                }
+        };  
     }
 }
