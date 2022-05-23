@@ -1,6 +1,6 @@
 package com.company;
 
-public class Mieszkanie implements PowierzchnioLiczone{
+public class Mieszkanie extends ElementPietra implements PowierzchnioLiczone {
 
     public String wizytowka;
     //public pomieszczenia;
