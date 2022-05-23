@@ -4,7 +4,35 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+    Pomieszczenie[] mojePomieszczenia = {
+                new Pomieszczenie(){
+                    {
+                        this.szerokosc=3;
+                        this.dlugosc=2;
+                        this.nazwa="pokoj";
+                    }
+                },
+                new Pomieszczenie(){
+                    {
+                        szerokosc=2;
+                        dlugosc=2;
+                        nazwa="lazienka";
+                    }
+                }
+        };
 
+        Mieszkanie mojeMieszkanie = new Mieszkanie(){
+            {
+                ElementPietra[] mojeElementyPietra = {
+                        mojeMieszkanie,
+                        new Pomieszczenie(){
+                            {
+                                szerokosc = 2;
+                                dlugosc = 2;
+                                nazwa = "suszarnia";
+                            }
+                        }
+                };
 
         Pietro[] mojePietra = {
                 new Pietro() {
@@ -35,23 +63,5 @@ public class Main {
         };
 
         System.out.println(mojBudynek.policzPole());
-      
-      
-    Pomieszczenie[] mojePomieszczenia = {
-                new Pomieszczenie(){
-                    {
-                        this.szerokosc=3;
-                        this.dlugosc=2;
-                        this.nazwa="pokoj";
-                    }
-                },
-                new Pomieszczenie(){
-                    {
-                        szerokosc=2;
-                        dlugosc=2;
-                        nazwa="lazienka";
-                    }
-                }
-        };  
     }
 }
