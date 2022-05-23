@@ -3,15 +3,22 @@ package com.company;
 public class Budynek implements PowierzchnioLiczone{
 
     public int powierzchniaDzialki;
-    public Pietro[] pietra = new Pietro[0];
-    public Garaz[] garaze = new Garaz[0];
+    public Pietro[] pietra;
+    public Garaz[] garaze;
 
-    public int podajiloscPieter(){
-        return 0;
-    }
 
     @Override
     public int policzPole() {
-        return 0;
+        int suma=0;
+        for(int i = 0; i < pietra.length ;i++)
+        {
+            suma += pietra[i].policzPole();
+        }
+        for(int i = 0; i < garaze.length ;i++)
+        {
+            suma += garaze[i].policzPole();
+        }
+
+        return suma;
     }
 }
